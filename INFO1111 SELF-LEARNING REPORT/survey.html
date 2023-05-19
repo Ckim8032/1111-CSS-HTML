@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey</title>
+</head>
+<body>
+    <div class="subheader">
+        <h1>Cola Preference Survey</h1>
+    </div>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Type here:" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Type here:" required>
+    </form>
+    <br>
+    <div class="Gender">
+        <label for="Gender">Gender:</label>
+        <select name="Gender" id="Gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+    </div>
+    <br>
+    <div class="Questions">
+        <h2>Questions:</h2>
+        <h3>1) What is your favourite Cola brand?:</h3>
+    </div>
+    <form>
+        <input type="radio" name="cola" value="Coca-Cola" id="Coca-Cola"> Coca-Cola<br>
+        <input type="radio" name="cola" value="Pepsi" id="Pepsi"> Pepsi<br>
+        <input type="radio" name="cola" value="Dr-Pepper" id="Dr-Pepper"> Dr Pepper<br>
+        <input type="radio" name="cola" value="LA-ICE" id="LA-ICE"> LA ICE<br>
+        <input type="radio" name="cola" value="Woolworths-Cola" id="Woolworths-Cola"> Woolworths Cola<br>
+        <input type="radio" name="cola" value="Other" id="Other"> Other<br>
+        <label for="other">If "Other", please specify:</label>
+        <input type="text" id="other" name="other" placeholder="Type here:">
+    </form>
+    <br><br>
+    <div class="Questions">
+        <h3>2) Why is it your favourite?:</h3>
+    </div>
+    <div class="textarea">
+        <label for="q2">Please write your answer in the box given below:</label><br><br>
+    <textarea name="q2" id="q2" cols="50" rows="20" placeholder="Type here:" required></textarea>
+    </div>
+    <br><br>
+    <div class="Questions">
+        <h3>3) What makes it unique from other brands?:</h3>
+    </div>
+    <div class="textarea">
+        <label for="q3">Please write your answer in the box given below:</label><br><br>
+        <textarea name="q3" id="q3" cols="50" rows="20" placeholder="Type here:" required></textarea>
+    </div>
+    
+    <br><br>
+    <div class="final">
+        <p>Thank you for your participation.</p>
+        <br><br>
+    <input type="submit" value="Submit form">
+    </div>
+    
+    
+</body>
+</html>
